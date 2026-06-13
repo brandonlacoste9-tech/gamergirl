@@ -87,7 +87,7 @@ const Header = () => {
             <button onClick={toggleTheme} className="btn btn-outline" style={{ padding: '0.5rem', borderRadius: '50%', width: '40px', height: '40px' }}>
               {theme === 'light' ? <Moon size={16} /> : <Sun size={16} />}
             </button>
-            <a href="http://localhost:5173/pricing" className="btn btn-outline" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem 1rem', color: '#d97706', borderColor: '#fcd34d', background: '#fef3c7' }}>
+            <a href={`${import.meta.env.VITE_ARCADE_URL || 'http://localhost:5173'}/pricing`} className="btn btn-outline" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem 1rem', color: '#d97706', borderColor: '#fcd34d', background: '#fef3c7' }}>
               👑 Go Pro
             </a>
             <Link to="/profile" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 600, color: 'var(--brand-secondary)' }}>
@@ -102,10 +102,10 @@ const Header = () => {
             <button onClick={toggleTheme} className="btn btn-outline" style={{ padding: '0.5rem', borderRadius: '50%', width: '40px', height: '40px' }}>
               {theme === 'light' ? <Moon size={16} /> : <Sun size={16} />}
             </button>
-            <a href="http://localhost:5173/pricing" className="btn btn-outline" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem 1rem', color: '#d97706', borderColor: '#fcd34d', background: '#fef3c7' }}>
+            <a href={`${import.meta.env.VITE_ARCADE_URL || 'http://localhost:5173'}/pricing`} className="btn btn-outline" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem 1rem', color: '#d97706', borderColor: '#fcd34d', background: '#fef3c7' }}>
               👑 Go Pro
             </a>
-            <a href="http://localhost:5173/login" className="btn btn-primary" style={{ padding: '0.5rem 1.5rem', textDecoration: 'none' }}>
+            <a href={`${import.meta.env.VITE_ARCADE_URL || 'http://localhost:5173'}/login`} className="btn btn-primary" style={{ padding: '0.5rem 1.5rem', textDecoration: 'none' }}>
               <User size={16} /> Login
             </a>
           </div>

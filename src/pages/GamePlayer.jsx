@@ -33,7 +33,7 @@ const GamePlayer = () => {
           });
       } else if (foundGame && foundGame.isFree) {
         // Enforce login to play free trial
-        window.location.href = 'http://localhost:5173/login';
+        window.location.href = `${import.meta.env.VITE_ARCADE_URL || 'http://localhost:5173'}/login`;
       }
       setLoading(false);
     });
@@ -126,7 +126,7 @@ const GamePlayer = () => {
               <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', background: 'rgba(255,255,255,0.8)', zIndex: 10 }}>
                 <h2 style={{ fontFamily: 'var(--font-heading)', color: 'var(--brand-primary)', fontSize: '2.5rem', marginBottom: '1rem' }}>Time's Up! ⏰</h2>
                 <p style={{ color: 'var(--text-primary)', fontSize: '1.2rem', marginBottom: '2rem' }}>Your 1.5-hour free trial has expired.</p>
-                <a href="http://localhost:5173/pricing" className="btn btn-primary" style={{ fontSize: '1.2rem', padding: '1rem 2rem', textDecoration: 'none' }}>
+                <a href={`${import.meta.env.VITE_ARCADE_URL || 'http://localhost:5173'}/pricing`} className="btn btn-primary" style={{ fontSize: '1.2rem', padding: '1rem 2rem', textDecoration: 'none' }}>
                   👑 Subscribe to Pro Gamer
                 </a>
               </div>
