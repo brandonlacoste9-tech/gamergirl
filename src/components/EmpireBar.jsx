@@ -34,6 +34,9 @@ const EmpireBar = () => {
       <a href="https://ironclaw.ca" style={{ color: '#00ffaa', textDecoration: 'none', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '6px' }}>
         <span>⚡</span> IRON CLAW
       </a>
+      <a href="https://hackermedia.com" style={{ color: '#00ff00', textDecoration: 'none', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '6px' }}>
+        <span>📰</span> HACKER MEDIA
+      </a>
     </div>
   );
 };
